@@ -36,7 +36,7 @@ class TestAddStudent(unittest.TestCase):
         
     def test_5(self): # incorrect add(Existing student code)
         st1 = Student(172580, 'Кычкин Алексей')
-        st2 = Student(172584, 'Иванов Иван')
+        st2 = Student(172580, 'Иванов Иван')
         inst = Institute()
         with self.assertRaises(Exception) as context:
             inst.add_student(st1)
