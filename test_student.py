@@ -60,7 +60,7 @@ class TestAddStudent(unittest.TestCase):
         self.assertEqual(len(inst.students), 0)
         
     def test_8(self): # incorrect type(Fio is null)
-        st = Student(172544, '')
+        st = Student(172580, '')
         inst = Institute()
         with self.assertRaises(Exception) as context:
             inst.add_student(st)
@@ -77,5 +77,5 @@ class TestGetStudent(unittest.TestCase):
         cls._inst.add_student(cls._stud)
     
     def test_1(self): # correct get
-        get_stud = self._inst.get_student(172544)
+        get_stud = self._inst.get_student(172580)
         self.assertEqual(get_stud, self._stud)
